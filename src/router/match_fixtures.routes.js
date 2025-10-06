@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import {findAll, findOne, createOne, updateOne, deleteOne, searchOne} from "../controller/match_fixtures.controller.js"
+import {findAll, findOne, createOne, updateOne, deleteOne} from "../controller/match_fixtures.controller.js"
 
 
 const matchFixturesRouter = Router()
@@ -12,7 +12,6 @@ matchFixturesRouter.get("/:id", findOne)
 matchFixturesRouter.post("/", createOne)
 matchFixturesRouter.put("/:id", updateOne)
 matchFixturesRouter.delete("/:id", deleteOne)
-matchFixturesRouter.get("/search", searchOne)
 
 
 export default matchFixturesRouter

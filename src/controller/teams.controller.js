@@ -82,7 +82,7 @@ export const updateOne = async (req, res) => {
 
 
 
-export const delateOne = async (req, res) => {
+export const deleteOne = async (req, res) => {
   try {
     const { id } = req.params
     const query = `delete from teams where id = $1 returning *`
